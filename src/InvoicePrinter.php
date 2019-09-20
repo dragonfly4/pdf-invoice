@@ -670,7 +670,7 @@ class InvoicePrinter extends FPDF
     }
 
     public function terms(){
-		if($this->addPageTermsColumns == 1){
+        if($this->addPageTermsColumns == 1){
             $txt = file_get_contents($this->addPageTermsText1);
             $this->SetY(10);
             $this->SetFont($this->font, 'b', 6);
